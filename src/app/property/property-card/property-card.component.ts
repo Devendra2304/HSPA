@@ -11,7 +11,8 @@ import { Component, Input, input } from '@angular/core';
 
 )
 export class PropertyCardComponent {
- @Input() property: any
+ @Input() property:any
+
 
 
 
