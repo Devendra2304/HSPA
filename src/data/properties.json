@@ -1,0 +1,38 @@
+[
+  {
+      "Id":1,
+      "Name":"Birla House",
+      "type":"House",
+      "Price":12000
+  },
+  {
+    "Id":2,
+    "Name":"Sara City",
+    "type":"House",
+    "Price":13000
+  },
+  { 
+    "Id":3,
+    "Name":"Eiffel Towers",
+    "type":"House",
+    "Price":16000
+  },
+  {
+    "Id":4,
+    "Name":"Gymkhana",
+    "type":"House",
+    "Price":19000
+  },
+  {
+    "Id":5,
+    "Name":"Mayuri Towers",
+    "type":"House",
+    "Price":10000
+  },
+  {
+    "Id":6,
+    "Name":"Gajanan Heights",
+    "type":"House",
+    "Price":12000
+  }
+]
