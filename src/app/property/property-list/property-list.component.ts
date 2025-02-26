@@ -3,7 +3,7 @@ import { PropertyCardComponent } from "../property-card/property-card.component"
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+
 
 
 @Component({
@@ -14,37 +14,21 @@ import { Injectable } from '@angular/core';
 })
 export class PropertyListComponent implements OnInit {
   
-  properties: Array<any>;
+  properties: any;
 
 
-  constructor()
-  {
-    this.properties = new Array<any>();
-
-  }
-
-  
-  // @Injectable({providedIn: 'root'})
-  // export class ServiceNameService {
-  //   constructor(private httpClient: HttpClient) { }
-    
-  // }) {}
+  constructor(private http:HttpClient){}
 
   ngOnInit(): void {
-    this.properties = [
-      {
-        "Id":1,
-        "Name":"Birla House",
-        "type":"House",
-        "Price":12000
-    },
-    {
-      "Id":1,
-      "Name":"Birla House",
-      "type":"House",
-      "Price":12000
-  },
-]
-  }
+    this.http.get('data/properties.json').subscribe(
+      data=>{
+        this.properties=data;
+        console.log(data);
 
+      }
+ 
+
+    );
+
+  } 
 }
